@@ -1,0 +1,14 @@
+artifact_uri: file:////kaggle/working/mlruns/868891437852399477/6b3925f0dea240a1911182dc7eb87c0e/artifacts
+end_time: 1778849657850
+entry_point_name: ''
+experiment_id: '868891437852399477'
+lifecycle_stage: active
+run_id: 6b3925f0dea240a1911182dc7eb87c0e
+run_name: eval_rag_20260515_182412
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778849654725
+status: 4
+tags: []
+user_id: Krish Jariwala

@@ -102,12 +102,40 @@ def analyze_conviction_changes(with_rag: List[Dict], without_rag: List[Dict],
 
 
 if __name__ == "__main__":
-    # Test RAG context formatting
-    test_state = {
-        "nifty_spot": 22859.61, "atm_iv": 13.41, "iv_skew_25d": 3.88,
-        "pcr": 1.13, "adx_14": 29.35, "realized_vol_5d": 13.61,
-        "vix_india": 14.08, "dte_nearest": 2, "moneyness_band": "ATM"
-    }
-    ctx = get_rag_context(test_state, k=3)
-    print("=== RAG Context ===")
-    print(ctx)
+    from src.run_eval import load_eval_data
+    from src.signal_pod import SignalPod
+    from src.orchestrator import Orchestrator
+    
+    # Load data
+    eval_df, _ = load_eval_data()
+    market_states = []
+    timestamps = []
+    actuals = []
+    for _, row in eval_df.iterrows():
+        market_state = {
+            "nifty_spot": row["nifty_spot"], "atm_iv": row["atm_iv"], "iv_skew_25d": row["iv_skew_25d"],
+            "pcr": row["pcr"], "adx_14": row["adx_14"], "realized_vol_5d": row["realized_vol_5d"],
+            "vix_india": row["vix_india"], "dte_nearest": int(row["dte_nearest"]), "moneyness_band": row["moneyness_band"]
+        }
+        market_states.append(market_state)
+        timestamps.append(row["timestamp"])
+        actuals.append(row["label"])
+
+    pod = SignalPod(model_path="lora_adapter/final", use_rag=True)
+    pod.load_model()
+    
+    results = run_ablation(market_states, timestamps, actuals, pod, Orchestrator)
+    summary = analyze_conviction_changes(results["with_rag"], results["without_rag"], market_states)
+    
+    print("\n=== RAG Ablation Results ===")
+    print(f"Total samples: {summary['total_samples']}")
+    print(f"Conviction changed in {summary['conviction_changed']} samples")
+    print(f"Direction changed in {summary['direction_changed']} samples")
+    print(f"Mean conviction delta: {summary['mean_conv_delta']:.4f}")
+    
+    print("\nTop Changes:")
+    for change in summary['changes']:
+        print(f"Index {change['index']}: ADX {change['adx']:.1f}, VIX {change['vix']:.1f}")
+        print(f"  No RAG: {change['dir_no_rag']} (conv: {change['conv_no_rag']:.2f})")
+        print(f"  With RAG: {change['dir_rag']} (conv: {change['conv_rag']:.2f})")
+        print(f"  Delta: {change['conv_delta']:+.2f}")

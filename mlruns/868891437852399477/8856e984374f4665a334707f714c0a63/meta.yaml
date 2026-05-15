@@ -1,0 +1,14 @@
+artifact_uri: file:////kaggle/working/mlruns/868891437852399477/8856e984374f4665a334707f714c0a63/artifacts
+end_time: 1778654708232
+entry_point_name: ''
+experiment_id: '868891437852399477'
+lifecycle_stage: active
+run_id: 8856e984374f4665a334707f714c0a63
+run_name: tinyllama_lora_finetune
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778654708223
+status: 4
+tags: []
+user_id: root

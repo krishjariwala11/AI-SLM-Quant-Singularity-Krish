@@ -23,8 +23,13 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(me
 logger = logging.getLogger(__name__)
 
 DATA_DIR = Path(__file__).parent.parent
+# On Kaggle, we must write to /kaggle/working/ instead of the read-only input dir
+if "/kaggle/input" in str(DATA_DIR):
+    OUTPUT_BASE = Path("/kaggle/working")
+else:
+    OUTPUT_BASE = DATA_DIR
 MARKET_STATES_PATH = DATA_DIR / "market_states.parquet"
-MODEL_PATH = DATA_DIR / "lora_adapter"  # Path to LoRA weights
+MODEL_PATH = DATA_DIR / "lora_adapter"
 
 
 def load_eval_data():
@@ -120,7 +125,7 @@ def run_walk_forward_eval(model_path: str = None, use_rag: bool = False):
         logger.warning(f"MLflow logging failed: {e}")
 
     # Save results to file
-    results_path = DATA_DIR / "data" / f"eval_results_{'rag' if use_rag else 'no_rag'}.json"
+    results_path = OUTPUT_BASE / "data" / f"eval_results_{'rag' if use_rag else 'no_rag'}.json"
     results_path.parent.mkdir(parents=True, exist_ok=True)
     with open(results_path, "w") as f:
         json.dump(results, f, indent=2, default=str)

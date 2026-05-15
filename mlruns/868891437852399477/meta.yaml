@@ -1,0 +1,8 @@
+artifact_location: file:////kaggle/working/mlruns/868891437852399477
+creation_time: 1778653353427
+experiment_id: '868891437852399477'
+last_update_time: 1778653353427
+lifecycle_stage: active
+name: nifty-signal-pod
+trace_location: null
+workspace: default

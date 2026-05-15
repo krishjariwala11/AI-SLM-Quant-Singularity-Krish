@@ -1,0 +1,176 @@
+2026-05-15 08:16:56,340 [INFO] Eval data: 390 rows, dates 2024-11-12 to 2024-12-23
+2026-05-15 08:17:22,691 [INFO] Loading model from lora_adapter/final
+2026-05-15 08:17:22,873 [INFO] HTTP Request: HEAD https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-15 08:17:22,873 [WARNING] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-15 08:17:22,889 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0/fe8a4ea1ffedaf415f4da2f062534de366a451e6/config.json "HTTP/1.1 200 OK"
+2026-05-15 08:17:22,906 [INFO] HTTP Request: GET https://huggingface.co/api/resolve-cache/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0/fe8a4ea1ffedaf415f4da2f062534de366a451e6/config.json "HTTP/1.1 200 OK"
+config.json: 100%|█████████████████████████████| 608/608 [00:00<00:00, 2.77MB/s]
+2026-05-15 08:17:22,959 [INFO] HTTP Request: HEAD https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 08:17:22,975 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0/fe8a4ea1ffedaf415f4da2f062534de366a451e6/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-15 08:17:22,992 [INFO] HTTP Request: GET https://huggingface.co/api/resolve-cache/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0/fe8a4ea1ffedaf415f4da2f062534de366a451e6/tokenizer_config.json "HTTP/1.1 200 OK"
+tokenizer_config.json: 1.29kB [00:00, 3.99MB/s]
+2026-05-15 08:17:23,037 [INFO] HTTP Request: HEAD https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 08:17:23,053 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0/fe8a4ea1ffedaf415f4da2f062534de366a451e6/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-15 08:17:23,101 [INFO] HTTP Request: GET https://huggingface.co/api/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-15 08:17:23,149 [INFO] HTTP Request: GET https://huggingface.co/api/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-15 08:17:23,193 [INFO] HTTP Request: HEAD https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0/resolve/main/tokenizer.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 08:17:23,209 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0/fe8a4ea1ffedaf415f4da2f062534de366a451e6/tokenizer.json "HTTP/1.1 200 OK"
+2026-05-15 08:17:23,226 [INFO] HTTP Request: GET https://huggingface.co/api/resolve-cache/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0/fe8a4ea1ffedaf415f4da2f062534de366a451e6/tokenizer.json "HTTP/1.1 200 OK"
+tokenizer.json: 1.84MB [00:00, 34.6MB/s]
+2026-05-15 08:17:23,337 [INFO] HTTP Request: HEAD https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0/resolve/main/tokenizer.model "HTTP/1.1 302 Found"
+2026-05-15 08:17:23,425 [INFO] HTTP Request: GET https://huggingface.co/api/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0/xet-read-token/fe8a4ea1ffedaf415f4da2f062534de366a451e6 "HTTP/1.1 200 OK"
+tokenizer.model: 100%|████████████████████████| 500k/500k [00:00<00:00, 891kB/s]
+2026-05-15 08:17:24,033 [INFO] HTTP Request: HEAD https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0/resolve/main/added_tokens.json "HTTP/1.1 404 Not Found"
+2026-05-15 08:17:24,079 [INFO] HTTP Request: HEAD https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0/resolve/main/special_tokens_map.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 08:17:24,096 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0/fe8a4ea1ffedaf415f4da2f062534de366a451e6/special_tokens_map.json "HTTP/1.1 200 OK"
+2026-05-15 08:17:24,113 [INFO] HTTP Request: GET https://huggingface.co/api/resolve-cache/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0/fe8a4ea1ffedaf415f4da2f062534de366a451e6/special_tokens_map.json "HTTP/1.1 200 OK"
+special_tokens_map.json: 100%|█████████████████| 551/551 [00:00<00:00, 2.21MB/s]
+2026-05-15 08:17:24,165 [INFO] HTTP Request: HEAD https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0/resolve/main/chat_template.jinja "HTTP/1.1 404 Not Found"
+2026-05-15 08:17:24,495 [INFO] HTTP Request: HEAD https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 08:17:24,511 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0/fe8a4ea1ffedaf415f4da2f062534de366a451e6/config.json "HTTP/1.1 200 OK"
+2026-05-15 08:17:24,561 [INFO] HTTP Request: HEAD https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-05-15 08:17:24,621 [INFO] HTTP Request: HEAD https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 08:17:24,637 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0/fe8a4ea1ffedaf415f4da2f062534de366a451e6/config.json "HTTP/1.1 200 OK"
+2026-05-15 08:17:24,689 [INFO] HTTP Request: HEAD https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+model.safetensors:  64%|████████████▊       | 1.41G/2.20G [00:08<00:04, 160MB/s]
+Loading weights: 100%|█| 201/201 [00:00<00:00, 1479.94it/s, Materializing param=
+2026-05-15 08:17:33,861 [INFO] HTTP Request: HEAD https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 08:17:33,876 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0/fe8a4ea1ffedaf415f4da2f062534de366a451e6/generation_config.json "HTTP/1.1 200 OK"
+2026-05-15 08:17:33,892 [INFO] HTTP Request: GET https://huggingface.co/api/resolve-cache/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0/fe8a4ea1ffedaf415f4da2f062534de366a451e6/generation_config.json "HTTP/1.1 200 OK"
+generation_config.json: 100%|███████████████████| 124/124 [00:00<00:00, 653kB/s]
+/usr/local/lib/python3.12/dist-packages/peft/config.py:220: UserWarning: Unexpected keyword arguments ['lora_ga_config', 'use_bdlora'] for class LoraConfig, these are ignored. This probably means that you're loading a configuration file that was saved using a higher version of the library and additional parameters have been introduced since. It is highly recommended to upgrade the PEFT version before continuing (e.g. by running `pip install -U peft`).
+  warnings.warn(
+2026-05-15 08:17:35,765 [INFO] LoRA adapter loaded successfully
+2026-05-15 08:17:35,768 [INFO] Model loaded successfully
+2026-05-15 09:35:24,807 [INFO] [ADX_BELOW_THRESHOLD] ADX=16.0 < 20.0. Suppressed.
+2026-05-15 09:35:24,807 [INFO] [ADX_BELOW_THRESHOLD] ADX=16.0 < 20.0. Suppressed.
+2026-05-15 09:35:24,807 [INFO] [ADX_BELOW_THRESHOLD] ADX=16.0 < 20.0. Suppressed.
+2026-05-15 09:35:24,808 [INFO] [ADX_BELOW_THRESHOLD] ADX=16.0 < 20.0. Suppressed.
+2026-05-15 09:35:24,808 [INFO] [ADX_BELOW_THRESHOLD] ADX=16.0 < 20.0. Suppressed.
+2026-05-15 09:35:24,808 [INFO] [ADX_BELOW_THRESHOLD] ADX=16.0 < 20.0. Suppressed.
+2026-05-15 09:35:24,808 [INFO] [ADX_BELOW_THRESHOLD] ADX=16.0 < 20.0. Suppressed.
+2026-05-15 09:35:24,809 [INFO] [ADX_BELOW_THRESHOLD] ADX=16.0 < 20.0. Suppressed.
+2026-05-15 09:35:24,809 [INFO] [ADX_BELOW_THRESHOLD] ADX=16.0 < 20.0. Suppressed.
+2026-05-15 09:35:24,809 [INFO] [ADX_BELOW_THRESHOLD] ADX=16.0 < 20.0. Suppressed.
+2026-05-15 09:35:24,809 [INFO] [ADX_BELOW_THRESHOLD] ADX=16.0 < 20.0. Suppressed.
+2026-05-15 09:35:24,810 [INFO] [ADX_BELOW_THRESHOLD] ADX=16.0 < 20.0. Suppressed.
+2026-05-15 09:35:24,810 [INFO] [ADX_BELOW_THRESHOLD] ADX=16.0 < 20.0. Suppressed.
+2026-05-15 09:35:24,810 [INFO] [ADX_BELOW_THRESHOLD] ADX=13.6 < 20.0. Suppressed.
+2026-05-15 09:35:24,811 [INFO] [ADX_BELOW_THRESHOLD] ADX=13.6 < 20.0. Suppressed.
+2026-05-15 09:35:24,811 [INFO] [ADX_BELOW_THRESHOLD] ADX=13.6 < 20.0. Suppressed.
+2026-05-15 09:35:24,811 [INFO] [ADX_BELOW_THRESHOLD] ADX=13.6 < 20.0. Suppressed.
+2026-05-15 09:35:24,811 [INFO] [ADX_BELOW_THRESHOLD] ADX=13.6 < 20.0. Suppressed.
+2026-05-15 09:35:24,812 [INFO] [ADX_BELOW_THRESHOLD] ADX=13.6 < 20.0. Suppressed.
+2026-05-15 09:35:24,812 [INFO] [ADX_BELOW_THRESHOLD] ADX=13.6 < 20.0. Suppressed.
+2026-05-15 09:35:24,812 [INFO] [ADX_BELOW_THRESHOLD] ADX=13.6 < 20.0. Suppressed.
+2026-05-15 09:35:24,813 [INFO] [ADX_BELOW_THRESHOLD] ADX=13.6 < 20.0. Suppressed.
+2026-05-15 09:35:24,813 [INFO] [ADX_BELOW_THRESHOLD] ADX=13.6 < 20.0. Suppressed.
+2026-05-15 09:35:24,813 [INFO] [ADX_BELOW_THRESHOLD] ADX=13.6 < 20.0. Suppressed.
+2026-05-15 09:35:24,814 [INFO] [ADX_BELOW_THRESHOLD] ADX=13.6 < 20.0. Suppressed.
+2026-05-15 09:35:24,814 [INFO] [ADX_BELOW_THRESHOLD] ADX=13.6 < 20.0. Suppressed.
+2026-05-15 09:35:24,814 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.3 < 20.0. Suppressed.
+2026-05-15 09:35:24,815 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.3 < 20.0. Suppressed.
+2026-05-15 09:35:24,815 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.3 < 20.0. Suppressed.
+2026-05-15 09:35:24,815 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.3 < 20.0. Suppressed.
+2026-05-15 09:35:24,816 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.3 < 20.0. Suppressed.
+2026-05-15 09:35:24,816 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.3 < 20.0. Suppressed.
+2026-05-15 09:35:24,816 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.3 < 20.0. Suppressed.
+2026-05-15 09:35:24,817 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.3 < 20.0. Suppressed.
+2026-05-15 09:35:24,817 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.3 < 20.0. Suppressed.
+2026-05-15 09:35:24,817 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.3 < 20.0. Suppressed.
+2026-05-15 09:35:24,817 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.3 < 20.0. Suppressed.
+2026-05-15 09:35:24,818 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.3 < 20.0. Suppressed.
+2026-05-15 09:35:24,818 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.3 < 20.0. Suppressed.
+2026-05-15 09:35:24,818 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 09:35:24,819 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 09:35:24,819 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 09:35:24,819 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 09:35:24,820 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 09:35:24,820 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 09:35:24,820 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 09:35:24,821 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 09:35:24,821 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 09:35:24,821 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 09:35:24,822 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 09:35:24,822 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 09:35:24,822 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 09:35:24,823 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 09:35:24,823 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 09:35:24,823 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 09:35:24,824 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 09:35:24,824 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 09:35:24,824 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 09:35:24,825 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 09:35:24,825 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 09:35:24,825 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 09:35:24,826 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 09:35:24,826 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 09:35:24,826 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 09:35:24,826 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 09:35:24,827 [INFO] [ADX_BELOW_THRESHOLD] ADX=17.7 < 20.0. Suppressed.
+2026-05-15 09:35:24,827 [INFO] [ADX_BELOW_THRESHOLD] ADX=17.7 < 20.0. Suppressed.
+2026-05-15 09:35:24,827 [INFO] [ADX_BELOW_THRESHOLD] ADX=17.7 < 20.0. Suppressed.
+2026-05-15 09:35:24,828 [INFO] [ADX_BELOW_THRESHOLD] ADX=17.7 < 20.0. Suppressed.
+2026-05-15 09:35:24,828 [INFO] [ADX_BELOW_THRESHOLD] ADX=17.7 < 20.0. Suppressed.
+2026-05-15 09:35:24,828 [INFO] [ADX_BELOW_THRESHOLD] ADX=17.7 < 20.0. Suppressed.
+2026-05-15 09:35:24,829 [INFO] [ADX_BELOW_THRESHOLD] ADX=17.7 < 20.0. Suppressed.
+2026-05-15 09:35:24,829 [INFO] [ADX_BELOW_THRESHOLD] ADX=17.7 < 20.0. Suppressed.
+2026-05-15 09:35:24,829 [INFO] [ADX_BELOW_THRESHOLD] ADX=17.7 < 20.0. Suppressed.
+2026-05-15 09:35:24,830 [INFO] [ADX_BELOW_THRESHOLD] ADX=17.7 < 20.0. Suppressed.
+2026-05-15 09:35:24,830 [INFO] [ADX_BELOW_THRESHOLD] ADX=17.7 < 20.0. Suppressed.
+2026-05-15 09:35:24,830 [INFO] [ADX_BELOW_THRESHOLD] ADX=17.7 < 20.0. Suppressed.
+2026-05-15 09:35:24,831 [INFO] [ADX_BELOW_THRESHOLD] ADX=17.7 < 20.0. Suppressed.
+
+======================================================================
+SIGNAL POD EVALUATION REPORT
+======================================================================
+
+Total predictions: 390
+Overall accuracy: 0.282
+  95% CI: [0.241, 0.326]
+
+--- Per-Block Accuracy ---
+  block_1: 0.308 (n=65)
+  block_2: 0.385 (n=65)
+  block_3: 0.185 (n=65)
+  block_4: 0.292 (n=65)
+  block_5: 0.277 (n=65)
+  block_6: 0.246 (n=65)
+
+Schema pass rate: 1.000
+Conviction validity: 1.000
+
+--- Conviction Calibration ---
+  very_low: acc=0.269, n=78
+  moderate: acc=0.285, n=312
+
+--- Orchestrator Rates ---
+  Suppression: 0.200
+  Downgrade: 0.000
+  Parse fail: 0.000
+
+--- VIX Regime ---
+  High VIX acc: 0.246 (n=130)
+  Low VIX acc: 0.346 (n=104)
+
+--- Assessment ---
+  ✗ directional_accuracy: 0.28205128205128205 [FAIL]
+  ✓ schema_pass_rate: 1.0 [PASS]
+  ✓ conviction_validity: 1.0 [PASS]
+  ✓ parse_failure_rate: 0.0 [PASS]
+  ✓ vix_regime_gap: 0.09999999999999998 [PASS]
+  ✓ conviction_calibration: True [PASS]
+
+  OVERALL: FAIL
+/usr/local/lib/python3.12/dist-packages/mlflow/tracking/_tracking_service/utils.py:184: FutureWarning: The filesystem tracking backend (e.g., './mlruns') is deprecated as of February 2026. Consider transitioning to a database backend (e.g., 'sqlite:///mlflow.db') to take advantage of the latest MLflow features. See https://mlflow.org/docs/latest/self-hosting/migrate-from-file-store for migration guidance.
+  return FileStore(store_uri, store_uri)
+2026-05-15 11:08:15,857 [WARNING] MLflow logging failed: [Errno 30] Read-only file system: '//kaggle/input/datasets/krishjariwala11/slm-intern-data/mlruns/.trash'
+Traceback (most recent call last):
+  File "/kaggle/input/datasets/krishjariwala11/slm-intern-data/src/run_eval.py", line 141, in <module>
+    results = run_walk_forward_eval(model_path=model_path, use_rag=args.rag)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/kaggle/input/datasets/krishjariwala11/slm-intern-data/src/run_eval.py", line 125, in run_walk_forward_eval
+    with open(results_path, "w") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 30] Read-only file system: '/kaggle/input/datasets/krishjariwala11/slm-intern-data/data/eval_results_no_rag.json'

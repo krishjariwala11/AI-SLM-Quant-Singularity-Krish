@@ -56,16 +56,23 @@ pip install -r requirements.txt
 # 1. Prepare clean training data
 python src/data_prep.py
 
-# 2. Run evaluation (after training)
-python src/run_eval.py
+# 2. Run baseline evaluation (Takes ~1 hour on CPU)
+python src/run_eval.py --model-path lora_adapter/final
 
-# 3. Run RAG ablation
+# 3. Run evaluation with RAG context (Takes ~1 hour on CPU)
+python src/run_eval.py --model-path lora_adapter/final --rag
+
+# 4. Analyze RAG ablation changes in conviction
 python src/rag_experiment.py
+
+# 5. Populate report.md with evaluation results automatically
+python src/generate_report.py
 ```
 
 ## Kaggle Notebook
 
-**URL**: [TODO: Add Kaggle notebook URL after training]
+**URL**: https://www.kaggle.com/code/krishjariwala11/model-train (for training the model with CPU)
+https://www.kaggle.com/code/krishjariwala11/mainpy (for exporting lora_adapter and mlruns)
 
 ## Key Design Decisions
 
@@ -73,3 +80,14 @@ python src/rag_experiment.py
 - **Data Cleaning**: Dropped 45/300 corrupted examples with string conviction values
 - **LoRA Config**: r=8, alpha=16, dropout=0.1, targeting q_proj and v_proj
 - **Evaluation**: Walk-forward only, 5-day rolling blocks, no k-fold
+- **Safety**: 3-rule deterministic orchestrator with JSON fallback
+
+## Final Deliverables Checklist
+
+1. **Written Report**: `report/report.md` (and exported PDF).
+2. **Kaggle Notebook**: URL in this README.
+3. **LoRA Weights**: `lora_adapter/final/`.
+4. **Clean Training Data**: `data/train_clean.jsonl` (generated via `src/data_prep.py`).
+5. **Evaluation Results**: `data/eval_results_no_rag.json` and `data/eval_results_rag.json`.
+6. **MLflow Artifacts**: Local `mlruns/` directory included in repo.
+7. **Codebase**: Orchestrator, Signal Pod, and Eval Suite in `src/`.

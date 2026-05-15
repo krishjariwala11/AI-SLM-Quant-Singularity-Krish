@@ -1,0 +1,190 @@
+{
+  "total_raw": 300,
+  "total_clean": 255,
+  "total_rejected": 45,
+  "rejection_details": [
+    {
+      "index": 47,
+      "reason": "conviction_is_string:'0.8 (high)'"
+    },
+    {
+      "index": 48,
+      "reason": "conviction_is_string:'high'"
+    },
+    {
+      "index": 49,
+      "reason": "conviction_is_string:'moderate'"
+    },
+    {
+      "index": 50,
+      "reason": "conviction_is_string:'low'"
+    },
+    {
+      "index": 51,
+      "reason": "conviction_is_string:'high confidence'"
+    },
+    {
+      "index": 52,
+      "reason": "conviction_is_string:'moderate confidence'"
+    },
+    {
+      "index": 53,
+      "reason": "conviction_is_string:'strong'"
+    },
+    {
+      "index": 54,
+      "reason": "conviction_is_string:'weak'"
+    },
+    {
+      "index": 55,
+      "reason": "conviction_is_string:'0.8 (high)'"
+    },
+    {
+      "index": 56,
+      "reason": "conviction_is_string:'high'"
+    },
+    {
+      "index": 57,
+      "reason": "conviction_is_string:'moderate'"
+    },
+    {
+      "index": 58,
+      "reason": "conviction_is_string:'low'"
+    },
+    {
+      "index": 59,
+      "reason": "conviction_is_string:'high confidence'"
+    },
+    {
+      "index": 60,
+      "reason": "conviction_is_string:'moderate confidence'"
+    },
+    {
+      "index": 61,
+      "reason": "conviction_is_string:'strong'"
+    },
+    {
+      "index": 62,
+      "reason": "conviction_is_string:'weak'"
+    },
+    {
+      "index": 63,
+      "reason": "conviction_is_string:'0.8 (high)'"
+    },
+    {
+      "index": 64,
+      "reason": "conviction_is_string:'high'"
+    },
+    {
+      "index": 65,
+      "reason": "conviction_is_string:'moderate'"
+    },
+    {
+      "index": 66,
+      "reason": "conviction_is_string:'low'"
+    },
+    {
+      "index": 67,
+      "reason": "conviction_is_string:'high confidence'"
+    },
+    {
+      "index": 68,
+      "reason": "conviction_is_string:'moderate confidence'"
+    },
+    {
+      "index": 69,
+      "reason": "conviction_is_string:'strong'"
+    },
+    {
+      "index": 70,
+      "reason": "conviction_is_string:'weak'"
+    },
+    {
+      "index": 71,
+      "reason": "conviction_is_string:'0.8 (high)'"
+    },
+    {
+      "index": 72,
+      "reason": "conviction_is_string:'high'"
+    },
+    {
+      "index": 73,
+      "reason": "conviction_is_string:'moderate'"
+    },
+    {
+      "index": 74,
+      "reason": "conviction_is_string:'low'"
+    },
+    {
+      "index": 75,
+      "reason": "conviction_is_string:'high confidence'"
+    },
+    {
+      "index": 76,
+      "reason": "conviction_is_string:'moderate confidence'"
+    },
+    {
+      "index": 77,
+      "reason": "conviction_is_string:'strong'"
+    },
+    {
+      "index": 78,
+      "reason": "conviction_is_string:'weak'"
+    },
+    {
+      "index": 79,
+      "reason": "conviction_is_string:'0.8 (high)'"
+    },
+    {
+      "index": 80,
+      "reason": "conviction_is_string:'high'"
+    },
+    {
+      "index": 81,
+      "reason": "conviction_is_string:'moderate'"
+    },
+    {
+      "index": 82,
+      "reason": "conviction_is_string:'low'"
+    },
+    {
+      "index": 83,
+      "reason": "conviction_is_string:'high confidence'"
+    },
+    {
+      "index": 84,
+      "reason": "conviction_is_string:'moderate confidence'"
+    },
+    {
+      "index": 85,
+      "reason": "conviction_is_string:'strong'"
+    },
+    {
+      "index": 86,
+      "reason": "conviction_is_string:'weak'"
+    },
+    {
+      "index": 87,
+      "reason": "conviction_is_string:'0.8 (high)'"
+    },
+    {
+      "index": 88,
+      "reason": "conviction_is_string:'high'"
+    },
+    {
+      "index": 89,
+      "reason": "conviction_is_string:'moderate'"
+    },
+    {
+      "index": 90,
+      "reason": "conviction_is_string:'low'"
+    },
+    {
+      "index": 91,
+      "reason": "conviction_is_string:'high confidence'"
+    }
+  ],
+  "rejection_summary": {
+    "conviction_is_string": 45
+  }
+}

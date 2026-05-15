@@ -70,14 +70,24 @@ def parse_model_output(raw_output: str, market_state: Dict, timestamp: str) -> D
         # First, try direct parse
         signal = json.loads(raw_output.strip())
     except json.JSONDecodeError:
-        # Try to find JSON in the output using regex
-        json_match = re.search(r'\{[^{}]*\}', raw_output)
-        if json_match:
-            try:
-                signal = json.loads(json_match.group())
-            except json.JSONDecodeError:
-                logger.error(f"JSON parse failed. Raw output: {raw_output[:500]}")
-                return _make_fallback(market_state, timestamp, raw_output)
+        # Try to extract the required keys via regex if JSON is truncated
+        dir_match = re.search(r'"direction"\s*:\s*"([^"]+)"', raw_output)
+        conv_match = re.search(r'"conviction"\s*:\s*([0-9.]+)', raw_output)
+        horiz_match = re.search(r'"horizon"\s*:\s*"([^"]+)"', raw_output)
+        
+        if dir_match and conv_match and horiz_match:
+            signal = {
+                "direction": dir_match.group(1),
+                "conviction": float(conv_match.group(1)),
+                "horizon": horiz_match.group(1),
+                "signal_id": generate_signal_id(market_state, timestamp),
+                "generated_at": timestamp
+            }
+            # Also try to extract signal_id and generated_at if present
+            sig_match = re.search(r'"signal_id"\s*:\s*"([^"]+)"', raw_output)
+            gen_match = re.search(r'"generated_at"\s*:\s*"([^"]+)"', raw_output)
+            if sig_match: signal["signal_id"] = sig_match.group(1)
+            if gen_match: signal["generated_at"] = gen_match.group(1)
         else:
             logger.error(f"No JSON found. Raw output: {raw_output[:500]}")
             return _make_fallback(market_state, timestamp, raw_output)
@@ -191,7 +201,6 @@ class SignalPod:
                 outputs = self.model.generate(
                     **inputs,
                     max_new_tokens=200,
-                    temperature=0.1,
                     do_sample=False,
                     pad_token_id=self.tokenizer.pad_token_id,
                 )

@@ -1,7 +1,7 @@
 # NIFTY Options Signal Pod — Technical Report
 
 **AI-SLM Screening Submission**
-**Date**: May 2025
+**Date**: May 2026
 
 ---
 
@@ -187,21 +187,57 @@ Generate a trading signal based on the current state and historical context.
 
 **Ablation design**: Two conditions — pod without RAG (Condition A) vs pod with RAG using `retrieve(market_state, k=3)` (Condition B) — run across the full walk-forward evaluation set. Key comparison metrics: directional accuracy, conviction distributions, and whether conviction changes under retrieval are justified by episode similarity.
 
-*[Results in Section 4 after training]*
+**RAG Experiment Findings**:
+- **Accuracy Improvement**: Retrieval improved overall accuracy from **28.2% to 35.4%**. The most significant gains were seen in Block 4 (29.2% → 41.5%) and Block 6 (24.6% → 41.5%).
+- **Historical Grounding**: The model successfully leveraged the "Episode Results" in the prompt to correct directionality in volatile regimes.
+- **Conviction Shift**: RAG caused a significant increase in the **Downgrade Rate (0% → 28.7%)**. The model became more cautious, frequently outputting conviction scores below the 0.40 threshold when retrieved episodes showed conflicting results.
+- **Calibration Trade-off**: While accuracy increased, **calibration quality decreased**. The RAG-enabled model showed non-monotonic calibration, with higher accuracy in low-conviction bins than in moderate ones. This suggests that while RAG provides better directional hints, it may introduce "contextual noise" that confuses the model's self-assessment of certainty.
 
 ---
 
 ## Section 4: Results
 
-*[To be completed after Kaggle training run. The framework will populate these tables automatically from `run_eval.py`.]*
+### Walk-Forward Directional Accuracy (Per 5-Day Window)
 
-Expected output format:
+| Block | Days | Accuracy (No RAG) | Accuracy (With RAG) |
+|-------|------|-------------------|--------------------|
+| block_1 | 65 | 0.308 | 0.354 |
+| block_2 | 65 | 0.385 | 0.385 |
+| block_3 | 65 | 0.185 | 0.185 |
+| block_4 | 65 | 0.292 | 0.415 |
+| block_5 | 65 | 0.277 | 0.369 |
+| block_6 | 65 | 0.246 | 0.415 |
 
-| Block | Days | Accuracy | 95% CI | Schema Rate | Suppression | Downgrade |
-|-------|------|----------|--------|-------------|-------------|-----------|
-| 1 | 31–35 | — | — | — | — | — |
-| 2 | 36–40 | — | — | — | — | — |
-| ... | ... | — | — | — | — | — |
+**Overall Accuracy (No RAG)**: 0.282 (95% CI: [0.236, 0.326])
+**Overall Accuracy (With RAG)**: 0.354 (95% CI: [0.305, 0.400])
+
+### Output Schema Pass Rate
+
+- **No RAG**: 100.0%
+- **With RAG**: 100.0%
+
+### Conviction Reliability Across Bins (No RAG)
+
+| Conviction Bin | Count | Directional Accuracy |
+|----------------|-------|----------------------|
+| very_low | 78 | 0.269 |
+| low | 0 | N/A |
+| moderate | 312 | 0.285 |
+| high | 0 | N/A |
+| very_high | 0 | N/A |
+
+**Calibration is monotonic**: Yes
+
+### Orchestrator Metrics & Regime Performance
+
+| Metric | No RAG | With RAG | Status (Threshold) |
+|--------|--------|----------|--------------------|
+| Suppression Rate | 20.0% | 20.0% | **PASS** (15–25%) |
+| Downgrade Rate | 0.0% | 28.7% | **PASS** (≤ 30%) |
+| Parse Failure Rate | 0.0% | 0.0% | **PASS** (< 5%) |
+| High VIX Accuracy | 24.6% | 30.0% | N/A |
+| Low VIX Accuracy | 34.6% | 37.5% | N/A |
+| VIX Regime Gap | 10.0pp | 7.5pp | **PASS** (< 15pp) |
 
 ---
 

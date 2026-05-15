@@ -1,0 +1,179 @@
+2026-05-15 11:15:32,403 [INFO] Eval data: 390 rows, dates 2024-11-12 to 2024-12-23
+2026-05-15 11:15:40,692 [INFO] Loading model from lora_adapter/final
+2026-05-15 11:15:40,852 [INFO] HTTP Request: HEAD https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-15 11:15:40,853 [WARNING] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-15 11:15:40,869 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0/fe8a4ea1ffedaf415f4da2f062534de366a451e6/config.json "HTTP/1.1 200 OK"
+2026-05-15 11:15:40,920 [INFO] HTTP Request: HEAD https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 11:15:40,936 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0/fe8a4ea1ffedaf415f4da2f062534de366a451e6/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-15 11:15:40,978 [INFO] HTTP Request: HEAD https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 11:15:40,993 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0/fe8a4ea1ffedaf415f4da2f062534de366a451e6/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-15 11:15:41,041 [INFO] HTTP Request: GET https://huggingface.co/api/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-15 11:15:41,093 [INFO] HTTP Request: GET https://huggingface.co/api/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-15 11:15:41,407 [INFO] HTTP Request: HEAD https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 11:15:41,423 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0/fe8a4ea1ffedaf415f4da2f062534de366a451e6/config.json "HTTP/1.1 200 OK"
+2026-05-15 11:15:41,475 [INFO] HTTP Request: HEAD https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 11:15:41,490 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0/fe8a4ea1ffedaf415f4da2f062534de366a451e6/config.json "HTTP/1.1 200 OK"
+Loading weights: 100%|█| 201/201 [00:00<00:00, 1336.84it/s, Materializing param=
+2026-05-15 11:15:41,772 [INFO] HTTP Request: HEAD https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-15 11:15:41,788 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0/fe8a4ea1ffedaf415f4da2f062534de366a451e6/generation_config.json "HTTP/1.1 200 OK"
+/usr/local/lib/python3.12/dist-packages/peft/config.py:220: UserWarning: Unexpected keyword arguments ['lora_ga_config', 'use_bdlora'] for class LoraConfig, these are ignored. This probably means that you're loading a configuration file that was saved using a higher version of the library and additional parameters have been introduced since. It is highly recommended to upgrade the PEFT version before continuing (e.g. by running `pip install -U peft`).
+  warnings.warn(
+2026-05-15 11:15:42,607 [INFO] LoRA adapter loaded successfully
+2026-05-15 11:15:42,609 [INFO] Model loaded successfully
+2026-05-15 11:34:46,947 [INFO] [LOW_CONVICTION] conv=0.05 < 0.4. Downgraded PE → NEUTRAL.
+2026-05-15 13:44:15,432 [INFO] [LOW_CONVICTION] conv=0.39 < 0.4. Downgraded CE → NEUTRAL.
+2026-05-15 13:46:41,203 [INFO] [LOW_CONVICTION] conv=0.39 < 0.4. Downgraded CE → NEUTRAL.
+2026-05-15 13:55:26,069 [INFO] [LOW_CONVICTION] conv=0.37 < 0.4. Downgraded CE → NEUTRAL.
+2026-05-15 13:55:26,070 [INFO] [ADX_BELOW_THRESHOLD] ADX=16.0 < 20.0. Suppressed.
+2026-05-15 13:55:26,070 [INFO] [ADX_BELOW_THRESHOLD] ADX=16.0 < 20.0. Suppressed.
+2026-05-15 13:55:26,071 [INFO] [ADX_BELOW_THRESHOLD] ADX=16.0 < 20.0. Suppressed.
+2026-05-15 13:55:26,071 [INFO] [ADX_BELOW_THRESHOLD] ADX=16.0 < 20.0. Suppressed.
+2026-05-15 13:55:26,071 [INFO] [ADX_BELOW_THRESHOLD] ADX=16.0 < 20.0. Suppressed.
+2026-05-15 13:55:26,072 [INFO] [ADX_BELOW_THRESHOLD] ADX=16.0 < 20.0. Suppressed.
+2026-05-15 13:55:26,072 [INFO] [ADX_BELOW_THRESHOLD] ADX=16.0 < 20.0. Suppressed.
+2026-05-15 13:55:26,073 [INFO] [ADX_BELOW_THRESHOLD] ADX=16.0 < 20.0. Suppressed.
+2026-05-15 13:55:26,073 [INFO] [ADX_BELOW_THRESHOLD] ADX=16.0 < 20.0. Suppressed.
+2026-05-15 13:55:26,074 [INFO] [ADX_BELOW_THRESHOLD] ADX=16.0 < 20.0. Suppressed.
+2026-05-15 13:55:26,074 [INFO] [ADX_BELOW_THRESHOLD] ADX=16.0 < 20.0. Suppressed.
+2026-05-15 13:55:26,074 [INFO] [ADX_BELOW_THRESHOLD] ADX=16.0 < 20.0. Suppressed.
+2026-05-15 13:55:26,075 [INFO] [ADX_BELOW_THRESHOLD] ADX=16.0 < 20.0. Suppressed.
+2026-05-15 13:55:26,075 [INFO] [ADX_BELOW_THRESHOLD] ADX=13.6 < 20.0. Suppressed.
+2026-05-15 13:55:26,075 [INFO] [ADX_BELOW_THRESHOLD] ADX=13.6 < 20.0. Suppressed.
+2026-05-15 13:55:26,076 [INFO] [ADX_BELOW_THRESHOLD] ADX=13.6 < 20.0. Suppressed.
+2026-05-15 13:55:26,076 [INFO] [ADX_BELOW_THRESHOLD] ADX=13.6 < 20.0. Suppressed.
+2026-05-15 13:55:26,076 [INFO] [ADX_BELOW_THRESHOLD] ADX=13.6 < 20.0. Suppressed.
+2026-05-15 13:55:26,077 [INFO] [ADX_BELOW_THRESHOLD] ADX=13.6 < 20.0. Suppressed.
+2026-05-15 13:55:26,077 [INFO] [ADX_BELOW_THRESHOLD] ADX=13.6 < 20.0. Suppressed.
+2026-05-15 13:55:26,078 [INFO] [ADX_BELOW_THRESHOLD] ADX=13.6 < 20.0. Suppressed.
+2026-05-15 13:55:26,078 [INFO] [ADX_BELOW_THRESHOLD] ADX=13.6 < 20.0. Suppressed.
+2026-05-15 13:55:26,078 [INFO] [ADX_BELOW_THRESHOLD] ADX=13.6 < 20.0. Suppressed.
+2026-05-15 13:55:26,079 [INFO] [ADX_BELOW_THRESHOLD] ADX=13.6 < 20.0. Suppressed.
+2026-05-15 13:55:26,079 [INFO] [ADX_BELOW_THRESHOLD] ADX=13.6 < 20.0. Suppressed.
+2026-05-15 13:55:26,079 [INFO] [ADX_BELOW_THRESHOLD] ADX=13.6 < 20.0. Suppressed.
+2026-05-15 13:55:26,080 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.3 < 20.0. Suppressed.
+2026-05-15 13:55:26,080 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.3 < 20.0. Suppressed.
+2026-05-15 13:55:26,080 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.3 < 20.0. Suppressed.
+2026-05-15 13:55:26,081 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.3 < 20.0. Suppressed.
+2026-05-15 13:55:26,081 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.3 < 20.0. Suppressed.
+2026-05-15 13:55:26,082 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.3 < 20.0. Suppressed.
+2026-05-15 13:55:26,082 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.3 < 20.0. Suppressed.
+2026-05-15 13:55:26,082 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.3 < 20.0. Suppressed.
+2026-05-15 13:55:26,083 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.3 < 20.0. Suppressed.
+2026-05-15 13:55:26,083 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.3 < 20.0. Suppressed.
+2026-05-15 13:55:26,083 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.3 < 20.0. Suppressed.
+2026-05-15 13:55:26,084 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.3 < 20.0. Suppressed.
+2026-05-15 13:55:26,084 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.3 < 20.0. Suppressed.
+2026-05-15 13:55:26,085 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 13:55:26,085 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 13:55:26,085 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 13:55:26,086 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 13:55:26,086 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 13:55:26,086 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 13:55:26,087 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 13:55:26,087 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 13:55:26,088 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 13:55:26,088 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 13:55:26,088 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 13:55:26,089 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 13:55:26,089 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 13:55:26,090 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 13:55:26,090 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 13:55:26,090 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 13:55:26,091 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 13:55:26,091 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 13:55:26,091 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 13:55:26,092 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 13:55:26,092 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 13:55:26,093 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 13:55:26,093 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 13:55:26,093 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 13:55:26,094 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 13:55:26,094 [INFO] [ADX_BELOW_THRESHOLD] ADX=10.0 < 20.0. Suppressed.
+2026-05-15 13:55:26,094 [INFO] [ADX_BELOW_THRESHOLD] ADX=17.7 < 20.0. Suppressed.
+2026-05-15 13:55:26,095 [INFO] [ADX_BELOW_THRESHOLD] ADX=17.7 < 20.0. Suppressed.
+2026-05-15 13:55:26,095 [INFO] [ADX_BELOW_THRESHOLD] ADX=17.7 < 20.0. Suppressed.
+2026-05-15 13:55:26,095 [INFO] [ADX_BELOW_THRESHOLD] ADX=17.7 < 20.0. Suppressed.
+2026-05-15 13:55:26,096 [INFO] [ADX_BELOW_THRESHOLD] ADX=17.7 < 20.0. Suppressed.
+2026-05-15 13:55:26,096 [INFO] [ADX_BELOW_THRESHOLD] ADX=17.7 < 20.0. Suppressed.
+2026-05-15 13:55:26,097 [INFO] [ADX_BELOW_THRESHOLD] ADX=17.7 < 20.0. Suppressed.
+2026-05-15 13:55:26,097 [INFO] [ADX_BELOW_THRESHOLD] ADX=17.7 < 20.0. Suppressed.
+2026-05-15 13:55:26,097 [INFO] [ADX_BELOW_THRESHOLD] ADX=17.7 < 20.0. Suppressed.
+2026-05-15 13:55:26,098 [INFO] [ADX_BELOW_THRESHOLD] ADX=17.7 < 20.0. Suppressed.
+2026-05-15 13:55:26,098 [INFO] [ADX_BELOW_THRESHOLD] ADX=17.7 < 20.0. Suppressed.
+2026-05-15 13:55:26,099 [INFO] [ADX_BELOW_THRESHOLD] ADX=17.7 < 20.0. Suppressed.
+2026-05-15 13:55:26,099 [INFO] [ADX_BELOW_THRESHOLD] ADX=17.7 < 20.0. Suppressed.
+2026-05-15 13:56:10,357 [INFO] [LOW_CONVICTION] conv=0.00 < 0.4. Downgraded NEUTRAL → NEUTRAL.
+2026-05-15 13:56:49,918 [INFO] [LOW_CONVICTION] conv=0.00 < 0.4. Downgraded NEUTRAL → NEUTRAL.
+2026-05-15 13:57:55,325 [INFO] [LOW_CONVICTION] conv=0.00 < 0.4. Downgraded NEUTRAL → NEUTRAL.
+2026-05-15 13:59:00,203 [INFO] [LOW_CONVICTION] conv=0.32 < 0.4. Downgraded CE → NEUTRAL.
+2026-05-15 14:00:05,926 [INFO] [LOW_CONVICTION] conv=0.00 < 0.4. Downgraded NEUTRAL → NEUTRAL.
+2026-05-15 14:01:11,336 [INFO] [LOW_CONVICTION] conv=0.39 < 0.4. Downgraded CE → NEUTRAL.
+2026-05-15 14:02:17,967 [INFO] [LOW_CONVICTION] conv=0.39 < 0.4. Downgraded CE → NEUTRAL.
+2026-05-15 14:03:25,574 [INFO] [LOW_CONVICTION] conv=0.00 < 0.4. Downgraded NEUTRAL → NEUTRAL.
+2026-05-15 14:04:10,493 [INFO] [LOW_CONVICTION] conv=0.00 < 0.4. Downgraded NEUTRAL → NEUTRAL.
+2026-05-15 14:04:51,353 [INFO] [LOW_CONVICTION] conv=0.00 < 0.4. Downgraded NEUTRAL → NEUTRAL.
+2026-05-15 14:07:04,688 [INFO] [LOW_CONVICTION] conv=0.00 < 0.4. Downgraded NEUTRAL → NEUTRAL.
+2026-05-15 14:08:11,925 [INFO] [LOW_CONVICTION] conv=0.00 < 0.4. Downgraded NEUTRAL → NEUTRAL.
+2026-05-15 14:09:18,957 [INFO] [LOW_CONVICTION] conv=0.00 < 0.4. Downgraded NEUTRAL → NEUTRAL.
+2026-05-15 14:11:05,719 [INFO] [LOW_CONVICTION] conv=0.00 < 0.4. Downgraded NEUTRAL → NEUTRAL.
+2026-05-15 14:13:33,745 [INFO] [LOW_CONVICTION] conv=0.00 < 0.4. Downgraded NEUTRAL → NEUTRAL.
+2026-05-15 14:15:21,165 [INFO] [LOW_CONVICTION] conv=0.00 < 0.4. Downgraded NEUTRAL → NEUTRAL.
+2026-05-15 14:17:07,850 [INFO] [LOW_CONVICTION] conv=0.00 < 0.4. Downgraded NEUTRAL → NEUTRAL.
+2026-05-15 14:17:48,746 [INFO] [LOW_CONVICTION] conv=0.00 < 0.4. Downgraded PE → NEUTRAL.
+2026-05-15 14:18:29,577 [INFO] [LOW_CONVICTION] conv=0.01 < 0.4. Downgraded PE → NEUTRAL.
+2026-05-15 14:19:09,648 [INFO] [LOW_CONVICTION] conv=0.00 < 0.4. Downgraded NEUTRAL → NEUTRAL.
+2026-05-15 14:22:03,484 [INFO] [LOW_CONVICTION] conv=0.39 < 0.4. Downgraded CE → NEUTRAL.
+2026-05-15 14:23:10,469 [INFO] [LOW_CONVICTION] conv=0.35 < 0.4. Downgraded PE → NEUTRAL.
+2026-05-15 14:24:17,351 [INFO] [LOW_CONVICTION] conv=0.00 < 0.4. Downgraded NEUTRAL → NEUTRAL.
+2026-05-15 14:25:23,807 [INFO] [LOW_CONVICTION] conv=0.32 < 0.4. Downgraded CE → NEUTRAL.
+2026-05-15 14:27:37,099 [INFO] [LOW_CONVICTION] conv=0.00 < 0.4. Downgraded NEUTRAL → NEUTRAL.
+2026-05-15 14:29:51,756 [INFO] [LOW_CONVICTION] conv=0.39 < 0.4. Downgraded CE → NEUTRAL.
+2026-05-15 14:31:40,431 [INFO] [LOW_CONVICTION] conv=0.00 < 0.4. Downgraded NEUTRAL → NEUTRAL.
+2026-05-15 14:32:47,617 [INFO] [LOW_CONVICTION] conv=0.35 < 0.4. Downgraded PE → NEUTRAL.
+2026-05-15 14:33:54,459 [INFO] [LOW_CONVICTION] conv=0.01 < 0.4. Downgraded PE → NEUTRAL.
+2026-05-15 14:35:01,445 [INFO] [LOW_CONVICTION] conv=0.01 < 0.4. Downgraded PE → NEUTRAL.
+2026-05-15 14:36:48,315 [INFO] [LOW_CONVICTION] conv=0.00 < 0.4. Downgraded NEUTRAL → NEUTRAL.
+2026-05-15 14:37:55,629 [INFO] [LOW_CONVICTION] conv=0.01 < 0.4. Downgraded PE → NEUTRAL.
+2026-05-15 14:38:36,350 [INFO] [LOW_CONVICTION] conv=0.00 < 0.4. Downgraded NEUTRAL → NEUTRAL.
+2026-05-15 14:40:50,028 [INFO] [LOW_CONVICTION] conv=0.34 < 0.4. Downgraded PE → NEUTRAL.
+2026-05-15 14:42:37,712 [INFO] [LOW_CONVICTION] conv=0.00 < 0.4. Downgraded NEUTRAL → NEUTRAL.
+2026-05-15 14:43:19,687 [INFO] [LOW_CONVICTION] conv=0.05 < 0.4. Downgraded PE → NEUTRAL.
+2026-05-15 14:44:27,060 [INFO] [LOW_CONVICTION] conv=0.05 < 0.4. Downgraded PE → NEUTRAL.
+2026-05-15 14:45:34,760 [INFO] [LOW_CONVICTION] conv=0.00 < 0.4. Downgraded NEUTRAL → NEUTRAL.
+2026-05-15 14:46:15,420 [INFO] [LOW_CONVICTION] conv=0.01 < 0.4. Downgraded PE → NEUTRAL.
+2026-05-15 14:47:22,551 [INFO] [LOW_CONVICTION] conv=0.06 < 0.4. Downgraded PE → NEUTRAL.
+2026-05-15 14:48:29,380 [INFO] [LOW_CONVICTION] conv=0.04 < 0.4. Downgraded PE → NEUTRAL.
+2026-05-15 14:49:35,991 [INFO] [LOW_CONVICTION] conv=0.01 < 0.4. Downgraded PE → NEUTRAL.
+2026-05-15 14:50:42,083 [INFO] [LOW_CONVICTION] conv=0.01 < 0.4. Downgraded PE → NEUTRAL.
+2026-05-15 14:52:02,934 [INFO] [LOW_CONVICTION] conv=0.00 < 0.4. Downgraded NEUTRAL → NEUTRAL.
+2026-05-15 14:54:16,355 [INFO] [LOW_CONVICTION] conv=0.06 < 0.4. Downgraded PE → NEUTRAL.
+2026-05-15 14:55:22,895 [INFO] [LOW_CONVICTION] conv=0.06 < 0.4. Downgraded PE → NEUTRAL.
+2026-05-15 14:57:34,861 [INFO] [LOW_CONVICTION] conv=0.37 < 0.4. Downgraded CE → NEUTRAL.
+2026-05-15 15:02:00,259 [INFO] [LOW_CONVICTION] conv=0.39 < 0.4. Downgraded CE → NEUTRAL.
+2026-05-15 15:03:07,947 [INFO] [LOW_CONVICTION] conv=0.06 < 0.4. Downgraded PE → NEUTRAL.
+2026-05-15 15:03:48,673 [INFO] [LOW_CONVICTION] conv=0.00 < 0.4. Downgraded NEUTRAL → NEUTRAL.
+2026-05-15 15:04:29,374 [INFO] [LOW_CONVICTION] conv=0.00 < 0.4. Downgraded NEUTRAL → NEUTRAL.
+2026-05-15 15:06:42,902 [INFO] [LOW_CONVICTION] conv=0.00 < 0.4. Downgraded NEUTRAL → NEUTRAL.
+2026-05-15 15:08:23,987 [INFO] [LOW_CONVICTION] conv=0.00 < 0.4. Downgraded NEUTRAL → NEUTRAL.
+2026-05-15 15:10:11,441 [INFO] [LOW_CONVICTION] conv=0.00 < 0.4. Downgraded NEUTRAL → NEUTRAL.
+2026-05-15 15:11:31,715 [INFO] [LOW_CONVICTION] conv=0.00 < 0.4. Downgraded NEUTRAL → NEUTRAL.
+2026-05-15 15:12:38,551 [INFO] [LOW_CONVICTION] conv=0.04 < 0.4. Downgraded NEUTRAL → NEUTRAL.
+2026-05-15 15:15:58,586 [INFO] [LOW_CONVICTION] conv=0.07 < 0.4. Downgraded PE → NEUTRAL.
+2026-05-15 15:16:38,495 [INFO] [LOW_CONVICTION] conv=0.01 < 0.4. Downgraded PE → NEUTRAL.
+2026-05-15 15:17:19,047 [INFO] [LOW_CONVICTION] conv=0.00 < 0.4. Downgraded NEUTRAL → NEUTRAL.
+2026-05-15 15:17:59,363 [INFO] [LOW_CONVICTION] conv=0.00 < 0.4. Downgraded NEUTRAL → NEUTRAL.
+2026-05-15 15:19:47,346 [INFO] [LOW_CONVICTION] conv=0.00 < 0.4. Downgraded NEUTRAL → NEUTRAL.
+2026-05-15 15:20:54,408 [INFO] [LOW_CONVICTION] conv=0.00 < 0.4. Downgraded NEUTRAL → NEUTRAL.
+2026-05-15 15:21:34,603 [INFO] [LOW_CONVICTION] conv=0.00 < 0.4. Downgraded NEUTRAL → NEUTRAL.
+2026-05-15 15:22:15,211 [INFO] [LOW_CONVICTION] conv=0.00 < 0.4. Downgraded NEUTRAL → NEUTRAL.
+2026-05-15 15:24:03,583 [INFO] [LOW_CONVICTION] conv=0.00 < 0.4. Downgraded NEUTRAL → NEUTRAL.
+2026-05-15 15:25:10,868 [INFO] [LOW_CONVICTION] conv=0.05 < 0.4. Downgraded PE → NEUTRAL.
+2026-05-15 15:25:51,930 [INFO] [LOW_CONVICTION] conv=0.01 < 0.4. Downgraded PE → NEUTRAL.
+2026-05-15 15:26:32,082 [INFO] [LOW_CONVICTION] conv=0.05 < 0.4. Downgraded PE → NEUTRAL.
+2026-05-15 15:29:00,201 [INFO] [LOW_CONVICTION] conv=0.00 < 0.4. Downgraded NEUTRAL → NEUTRAL.
+2026-05-15 15:30:22,039 [INFO] [LOW_CONVICTION] conv=0.00 < 0.4. Downgraded NEUTRAL → NEUTRAL.
+2026-05-15 15:31:02,061 [INFO] [LOW_CONVICTION] conv=0.00 < 0.4. Downgraded PE → NEUTRAL.
+2026-05-15 15:32:09,199 [INFO] [LOW_CONVICTION] conv=0.37 < 0.4. Downgraded CE → NEUTRAL.
+2026-05-15 15:36:07,980 [INFO] [LOW_CONVICTION] conv=0.16 < 0.4. Downgraded PE → NEUTRAL.
+2026-05-15 15:36:53,306 [INFO] [LOW_CONVICTION] conv=0.04 < 0.4. Downgraded PE → NEUTRAL.
